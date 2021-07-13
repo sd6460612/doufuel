@@ -1,0 +1,79 @@
+{
+  "name": "doufuel",
+  "version": "0.0.1",
+  "author": "doufu",
+  "license": "Mozilla Public License Version 2.0",
+  "private": false,
+  "participants": [],
+  "homepage": "https://github.com/sd6460612/doufuel",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build:report": "vue-cli-service build --report",
+    "lint": "vue-cli-service lint",
+    "lint:style": "stylelint-config-prettier-check",
+    "inspect": "vue-cli-service inspect",
+    "template": "plop",
+    "update": "ncu -u&&npm install --registry=https://registry.npm.taobao.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sd6460612/doufuel"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "clipboard": "^2.0.6",
+    "echarts": "^5.1.2",
+    "element-ui": "^2.13.2",
+    "js-cookie": "^2.2.1",
+    "lodash": "^4.17.20",
+    "mockjs": "^1.1.0",
+    "nprogress": "^0.2.0",
+    "remixicon": "^2.5.0",
+    "screenfull": "^5.0.2",
+    "vue": "^2.6.12",
+    "vue-echarts": "^6.0.0-rc.6",
+    "vue-i18n": "^8.21.1",
+    "vue-router": "^3.4.5",
+    "vuedraggable": "^2.24.1",
+    "vuex": "^3.5.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.5.6",
+    "@vue/cli-plugin-eslint": "^4.5.6",
+    "@vue/cli-service": "^4.5.6",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.1.0",
+    "body-parser": "^1.19.0",
+    "eslint": "^7.10.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-vue": "^7.0.1",
+    "lint-staged": "^10.4.0",
+    "prettier": "^2.1.2",
+    "sass": "^1.26.12",
+    "sass-loader": "^10.0.2",
+    "stylelint": "^13.7.2",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-recess-order": "^2.1.0",
+    "svg-sprite-loader": "^5.0.0",
+    "vue-template-compiler": "^2.6.12",
+    "webpackbar": "^4.0.0"
+  },
+  "keywords": [
+    "vue",
+    "element-ui",
+    "doufu"
+  ],
+  "engines": {
+    "node": ">=8.9",
+    "npm": ">= 3.0.0"
+  }
+}
