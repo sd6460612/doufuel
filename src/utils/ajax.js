@@ -142,7 +142,7 @@ const getAsUriParameters = (url, data) => {
 }
 
 let loginErrorHandler = async (data) => {
-  console.log(data)
+  // console.log(data)
   if (data.errormsg === 'nosign') {
     await store.dispatch('user/resetAll')
     router.push('/login')
